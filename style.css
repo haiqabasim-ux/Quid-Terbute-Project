@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #ccc;
+
+}
+.contener{
+    background-color: #e5e5fd;
+    border: 10px solid #1d1e4c;
+    min-height: 100vh;
+
+}
+.content{
+    max-height: 100%;
+    margin: 0 auto;
+}
+.first_section{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.first_section h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+.first_section h4{
+    font-size: 20px;
+    text-align: end;
+}
+.image_content{
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.image_content img{
+    width: 300px;
+    height: 320px;
+}
+.image_content{
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.text-section{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.text-section h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.text-section p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.bio-section{
+margin-top: 50px;
+    margin-left: 100px;    
+
+}
+.bio-section h3{
+    margin-top: 20px;
+}
+.bio-section ul{
+    margin-top: 20px;
+}
+.bio-section li{
+    margin-left: 30px;
+    line-height: 25px;
+}
+footer{
+    margin: 50PX 0;
+}
+footer P{
+    text-align: end;
+    margin-right: 50px;
+}
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+
+    .first_section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px 20px;
+        gap: 20px;
+    }
+
+    .first_section h4 {
+        text-align: center;
+    }
+
+    .text-section,
+    .bio-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-section h2 {
+        font-size: 45px;
+    }
+
+    .text-section p {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    footer p {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+
+    .first_section {
+        margin: 30px 15px;
+    }
+
+    .image_content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .first_section h1 {
+        font-size: 26px;
+    }
+
+    .first_section h4 {
+        font-size: 16px;
+    }
+
+    .text-section h2 {
+        font-size: 32px;
+    }
+
+    .text-section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .bio-section li {
+        font-size: 15px;
+    }
+
+    footer {
+        margin: 30px 0;
+    }
+}
